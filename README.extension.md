@@ -1,23 +1,24 @@
-_Luna Paint_ is a VS Code extension that lets you edit raster images from within the editor, just open an image from the explorer like any other file and start editing.
+_Luna Paint_ is a VS Code extension that lets you edit raster images from within the editor, just open an image from the explorer and start editing like any other file.
 
 > ⚠ This is an early preview:
 > - Some features you expect from an image editor may be missing or limited.
-> - Images below may show older versions of the UI.
 > - Hot exit state may break when the extension updates as the data format gets refined.
+> - Images below may show older versions of the UI.
+> - If you hit any problems or want to request a feature, please [create an issue on the repo](https://github.com/lunapaint/vscode-luna-paint).
 
 ## Features
 
-- **Performance**: The editor is built on WebGL to achieve great rendering performance.
-- **Layers and blend modes**: Compose an image from multiple images and combine them using blend modes.
+- **Performance**: The editor is built on WebGL to achieve a smooth editing experience.
+- **Layers and blend modes**: Compose an image using multiple layers, combining them with blend modes.
 - **Powerful tools**: A growing range of tools are available to modify images.
-- **Hot exit**: The editor supports [hot exit](https://code.visualstudio.com/docs/editor/codebasics#_hot-exit) just like a text editor within VS Code (currently only for small images).
-- **Codespaces and remote support**: Edit images remotely in a [GitHub Codespace](https://github.com/features/codespaces) or via the [Remote WSL](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl), [SSH](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh) and [Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extensions.
+- **Hot exit**: Support for [hot exit](https://code.visualstudio.com/docs/editor/codebasics#_hot-exit) is available for small images, just like in text files.
+- **Remote support**: Edit images remotely in a [GitHub Codespace](https://github.com/features/codespaces) or via the [Remote WSL](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl), [SSH](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh) and [Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extensions.
 
 ![](https://raw.githubusercontent.com/lunapaint/vscode-luna-paint/release/0.2/images/readme/demo.png)
 
 ## Tools
 
-The Tools window is available in the top left of the editor and allows switching the active tool.
+The Tools window in the top left of the editor allows switching the active tool.
 
 - The window can be hidden by hitting the `X` icon and toggled via Luna's _Menu_, the command palette or `F5`.
 
@@ -25,15 +26,15 @@ The Tools window is available in the top left of the editor and allows switching
 
 The Pencil tool is used to draw individual pixels.
 
-- Use left or right click to draw freehand using the _primary_ or _secondary color_.
-- Shift+click to draw a line from the last point, holding shift will show the angle of the line and which pixels will be drawn to.
-- Set the _Blend Modes_ to be used with the pencil, or select _replace_ to replace the color without blending.
+- Use left or right click to draw freehand using the _primary_ or _secondary color_ respectively.
+- Shift+click draws a line from the last drawn point, holding shift will show the angle of the line and which pixels will be drawn to.
+- Set the _Blend Mode_ option to be used with the pencil, or select _replace_ to replace the color without blending.
 
 ![](https://raw.githubusercontent.com/lunapaint/vscode-luna-paint/release/0.2/images/readme/pencil.gif)
 
 ### Eraser
 
-The Eraser tool is used to set pixels back to fully transparent.
+The Eraser tool is used to set pixels to fully transparent.
 
 - Set the brush size to clear more than a single pixel.
 
@@ -43,7 +44,7 @@ The Eraser tool is used to set pixels back to fully transparent.
 
 The Fill tool will flood fill an area with similar colors to the pixel it was triggered on.
 
-- Set the _Flood Mode_ option to _global_ in order to replace pixels across the entire image, regardless of whether they are adjacent
+- Set the _Flood Mode_ option to _global_ in order to replace pixels across the entire image, regardless of whether they are adjacent.
 
 ![](https://raw.githubusercontent.com/lunapaint/vscode-luna-paint/release/0.2/images/readme/fill.gif)
 
@@ -57,7 +58,7 @@ The Color Picker tool (aka eye dropper) allows sampling a layer's individual pix
 
 ### Selection, Move Selection and Move Pixels
 
-The Selection, Move Selection and Move Pixels tools allow selecting a portion of the image/layer, modifying that selection without making a new one and moving the selected pixels.
+The Selection, Move Selection and Move Pixels tools allow selecting a portion of the image/layer, modifying that selection and moving the selected pixels.
 
 - Ctrl/cmd+a can be used to select the entire image.
 - Ctrl/cmd+shift+x to crop the image to the selection.
@@ -68,7 +69,7 @@ The Selection, Move Selection and Move Pixels tools allow selecting a portion of
 
 The Rectangle tool can be used to draw a rectangle and then manipulate it within the canvas.
 
-- Supported include blend mode, style (fill, outline or both), outline size.
+- Supported include blend mode, style (fill, outline or both) and outline size.
 - Hold shift to drawing a square.
 - Options can be independently configured, even after drawing the rectangle.
 - The rectangle dimensions and top left coordinates are shown in the status bar.
@@ -105,7 +106,7 @@ The Layers window shows a preview of the image's layers and lets you modify thei
 
 - The controls at the bottom of the window manipulate the current layer.
 - The blend mode of a layer changes the way it blends with the layer(s) below.
-- Layers can be temporarily hidden by clicking the checkbox.
+- Layers can be hidden by clicking the checkbox.
 - The window can be hidden by hitting the `X` icon and toggled via Luna's _Menu_, the command palette or `F7`.
 
 ![](https://raw.githubusercontent.com/lunapaint/vscode-luna-paint/release/0.2/images/readme/layers-window.png)
@@ -119,7 +120,7 @@ There are many commands that run on either the _Layer_ or _Image_ (all layers), 
 
 ## History
 
-The History window allows viewing and navigating through changes made to the image, it's a more visual representation of VS Code's undo/redo stack.
+The History window allows viewing and navigating through changes made to the image, it's a more visual representation of VS Code's regular undo/redo stack.
 
 - Clicking an item in the history window will undo/redo to that point.
 - The window can be hidden by hitting the `X` icon and toggled via Luna's _Menu_, the command palette or `F6`.
@@ -132,7 +133,6 @@ The History window allows viewing and navigating through changes made to the ima
 
 The Minimap window shows the image with all layers blended together on an opaque background, it can be used to navigate around the image as well as to view a preview of the overall image without zooming out.
 
-- Show the minimap window through the menu or by running the `Toggle Minimap Window` command.
 - Move the viewport by clicking and dragging within the minimap.
 - Mouse wheel will zoom the viewport in and out.
 - By default stretch mode is enabled which will fill the minimap with the image, this can be turned off to view small images at actual size which is especially useful when working with pixel art as you can be zoomed fine tuning the image while still seeing a 100% view of it.
