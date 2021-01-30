@@ -158,7 +158,7 @@ Many people use auto save and it's enabled by default in GitHub Codespaces. Usin
 
 ### Free up memory of backgrounded tabs
 
-Disabling `luna.retainContextWhenHidden` will dispose of editor contexts, slowing down tab restoring while freeing up memory. This is enabled by default because files where hot exit are disabled will lose changes when switching tabs.
+Disabling `luna.retainContextWhenHidden` will dispose of editor contexts, slowing down tab restoring while freeing up memory. This is enabled by default because files where hot exit are disabled will lose changes when switching tabs. The recommendation for now is to set this to false if you work exclusively in small images.
 
 ### Quickly paste a screenshot into VS Code
 
