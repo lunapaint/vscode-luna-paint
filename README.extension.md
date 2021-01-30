@@ -64,6 +64,17 @@ The Selection, Move Selection and Move Pixels tools allow selecting a portion of
 
 ![](https://raw.githubusercontent.com/lunapaint/vscode-luna-paint/release/0.2/images/readme/selection.gif)
 
+### Rectangle
+
+The Rectangle tool can be used to draw a rectangle and then manipulate it within the canvas.
+
+- Supported include blend mode, style (fill, outline or both), outline size.
+- Hold shift to drawing a square.
+- Options can be independently configured, even after drawing the rectangle.
+- The rectangle dimensions and top left coordinates are shown in the status bar.
+
+![](https://raw.githubusercontent.com/lunapaint/vscode-luna-paint/release/0.2/images/readme/rectangle.gif)
+
 ### Zoom
 
 The Zoom tool allows zooming in and out with left and right click respectively.
