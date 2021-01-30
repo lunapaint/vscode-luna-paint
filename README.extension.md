@@ -13,7 +13,7 @@ _Luna Paint_ is a VS Code extension that lets you edit images from within the ed
 - **Hot exit**: The editor supports [hot exit](https://code.visualstudio.com/docs/editor/codebasics#_hot-exit) just like a text editor within VS Code (currently only for small images).
 - **Codespaces and remote support**: Edit images remotely in a [GitHub Codespace](https://github.com/features/codespaces) or via the [Remote WSL](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl), [SSH](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh) and [Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extensions.
 
-![](https://raw.githubusercontent.com/Tyriar/vscode-luna-paint/release/0.2/images/readme/demo.png)
+![](https://raw.githubusercontent.com/lunapaint/vscode-luna-paint/release/0.2/images/readme/demo.png)
 
 ## Tools
 
@@ -29,7 +29,7 @@ The Pencil tool is used to draw individual pixels.
 - Shift+click to draw a line from the last point, holding shift will show the angle of the line and which pixels will be drawn to.
 - Set the _Blend Modes_ to be used with the pencil, or select _replace_ to replace the color without blending.
 
-![](https://raw.githubusercontent.com/Tyriar/vscode-luna-paint/release/0.2/images/readme/pencil.gif)
+![](https://raw.githubusercontent.com/lunapaint/vscode-luna-paint/release/0.2/images/readme/pencil.gif)
 
 ### Eraser
 
@@ -37,7 +37,7 @@ The Eraser tool is used to set pixels back to fully transparent.
 
 - Set the brush size to clear more than a single pixel.
 
-![](https://raw.githubusercontent.com/Tyriar/vscode-luna-paint/release/0.2/images/readme/eraser.gif)
+![](https://raw.githubusercontent.com/lunapaint/vscode-luna-paint/release/0.2/images/readme/eraser.gif)
 
 ### Fill
 
@@ -45,7 +45,7 @@ The Fill tool will flood fill an area with similar colors to the pixel it was tr
 
 - Set the _Flood Mode_ option to _global_ in order to replace pixels across the entire image, regardless of whether they are adjacent
 
-![](https://raw.githubusercontent.com/Tyriar/vscode-luna-paint/release/0.2/images/readme/fill.gif)
+![](https://raw.githubusercontent.com/lunapaint/vscode-luna-paint/release/0.2/images/readme/fill.gif)
 
 ### Color Picker
 
@@ -53,7 +53,7 @@ The Color Picker tool (aka eye dropper) allows sampling a layer's individual pix
 
 - Change the _Sampling_ option to average the colors over a range of pixels.
 
-![](https://raw.githubusercontent.com/Tyriar/vscode-luna-paint/release/0.2/images/readme/color-picker.gif)
+![](https://raw.githubusercontent.com/lunapaint/vscode-luna-paint/release/0.2/images/readme/color-picker.gif)
 
 ### Selection, Move Selection and Move Pixels
 
@@ -62,7 +62,7 @@ The Selection, Move Selection and Move Pixels tools allow selecting a portion of
 - Ctrl/cmd+a can be used to select the entire image.
 - Ctrl/cmd+shift+x to crop the image to the selection.
 
-![](https://raw.githubusercontent.com/Tyriar/vscode-luna-paint/release/0.2/images/readme/selection.gif)
+![](https://raw.githubusercontent.com/lunapaint/vscode-luna-paint/release/0.2/images/readme/selection.gif)
 
 ### Zoom
 
@@ -70,7 +70,7 @@ The Zoom tool allows zooming in and out with left and right click respectively.
 
 - Ctrl+wheel can also be used to zoom, regardless of what the active tool is.
 
-![](https://raw.githubusercontent.com/Tyriar/vscode-luna-paint/release/0.2/images/readme/zoom.gif)
+![](https://raw.githubusercontent.com/lunapaint/vscode-luna-paint/release/0.2/images/readme/zoom.gif)
 
 
 
@@ -84,7 +84,7 @@ The Palette window lets you select the primary and secondary colors, with some b
 - Sliders are available to change channels quickly, the mouse wheel can be used while hovering the slider to increment/decrement by 1.
 - The window can be hidden by hitting the `X` icon and toggled via Luna's _Menu_, the command palette or `F8`.
 
-![](https://raw.githubusercontent.com/Tyriar/vscode-luna-paint/release/0.2/images/readme/palette-window.png)
+![](https://raw.githubusercontent.com/lunapaint/vscode-luna-paint/release/0.2/images/readme/palette-window.png)
 
 
 
@@ -97,12 +97,12 @@ The Layers window shows a preview of the image's layers and lets you modify thei
 - Layers can be temporarily hidden by clicking the checkbox.
 - The window can be hidden by hitting the `X` icon and toggled via Luna's _Menu_, the command palette or `F7`.
 
-![](https://raw.githubusercontent.com/Tyriar/vscode-luna-paint/release/0.2/images/readme/layers-window.png)
+![](https://raw.githubusercontent.com/lunapaint/vscode-luna-paint/release/0.2/images/readme/layers-window.png)
 
 There are many commands that run on either the _Layer_ or _Image_ (all layers), these are accessible via Luna's _Menu_ or the command palette:
 
-![](https://raw.githubusercontent.com/Tyriar/vscode-luna-paint/release/0.2/images/readme/layer-commands.png)
-![](https://raw.githubusercontent.com/Tyriar/vscode-luna-paint/release/0.2/images/readme/image-commands.png)
+![](https://raw.githubusercontent.com/lunapaint/vscode-luna-paint/release/0.2/images/readme/layer-commands.png)
+![](https://raw.githubusercontent.com/lunapaint/vscode-luna-paint/release/0.2/images/readme/image-commands.png)
 
 
 
@@ -113,7 +113,7 @@ The History window allows viewing and navigating through changes made to the ima
 - Clicking an item in the history window will undo/redo to that point.
 - The window can be hidden by hitting the `X` icon and toggled via Luna's _Menu_, the command palette or `F6`.
 
-![](https://raw.githubusercontent.com/Tyriar/vscode-luna-paint/release/0.2/images/readme/history-window.png)
+![](https://raw.githubusercontent.com/lunapaint/vscode-luna-paint/release/0.2/images/readme/history-window.png)
 
 
 
@@ -127,7 +127,7 @@ The Minimap window shows the image with all layers blended together on an opaque
 - By default stretch mode is enabled which will fill the minimap with the image, this can be turned off to view small images at actual size which is especially useful when working with pixel art as you can be zoomed fine tuning the image while still seeing a 100% view of it.
 - The viewport rectangle can be toggled off.
 
-![](https://raw.githubusercontent.com/Tyriar/vscode-luna-paint/release/0.2/images/readme/minimap-window.png)
+![](https://raw.githubusercontent.com/lunapaint/vscode-luna-paint/release/0.2/images/readme/minimap-window.png)
 
 
 
