@@ -62,6 +62,7 @@ The Selection, Move Selection and Move Pixels tools allow selecting a portion of
 
 - Ctrl/cmd+a can be used to select the entire image.
 - Ctrl/cmd+shift+x to crop the image to the selection.
+- Dragging the handles will resize the selection or scale the pixels
 
 ![](https://raw.githubusercontent.com/lunapaint/vscode-luna-paint/0.2.0/images/readme/selection.gif)
 
