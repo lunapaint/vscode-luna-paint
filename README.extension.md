@@ -175,6 +175,27 @@ The `luna.file.new` command supports providing width and height arguments, so yo
 
 With a keybinding like this, pasting in a screenshot is as easy as `ctrl+'` followed by `ctrl+v`.
 
+### Avoiding conflicts in keybindings
+
+To avoid conflicts between Luna Paint's keybindings and user defined keybindings, it's recommended to use the `when` clause `luna:focused && activeEditor == WebviewEditor` or the inverse. For example:
+
+```jsonc
+// Only enable this keybinding when Luna Paint is not focused, such that it doesn't conflict with
+// the default crop to selection keybinding.
+{
+  "key": "ctrl+shift+x",
+  "command": "workbench.action.terminal.kill",
+  "when": "!luna:focused && activeEditor != WebviewEditor"
+}
+
+// Only enable this keybinding when Luna Paint is focused
+{
+  "key": "e",
+  "command": "luna.image.expandCanvasToSelection",
+  "when": "luna:focused && activeEditor == WebviewEditor"
+}
+```
+
 
 
 ## Limitations
