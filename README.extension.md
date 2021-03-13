@@ -178,7 +178,7 @@ With a keybinding like this, pasting in a screenshot is as easy as `ctrl+'` foll
 
 ### Avoiding conflicts in keybindings
 
-To avoid conflicts between Luna Paint's keybindings and user defined keybindings, it's recommended to use the `when` clause `luna:focused && activeEditor == WebviewEditor` or the inverse. For example:
+To avoid conflicts between Luna Paint's keybindings and user defined keybindings, it's recommended to use the `when` clause `luna:focused && activeCustomEditorId == 'luna.editor'` or the inverse. For example:
 
 ```jsonc
 // Only enable this keybinding when Luna Paint is not focused, such that it doesn't conflict with
@@ -186,14 +186,14 @@ To avoid conflicts between Luna Paint's keybindings and user defined keybindings
 {
   "key": "ctrl+shift+x",
   "command": "workbench.action.terminal.kill",
-  "when": "!luna:focused && activeEditor != WebviewEditor"
+  "when": "!luna:focused && activeCustomEditorId != 'luna.editor'"
 }
 
 // Only enable this keybinding when Luna Paint is focused
 {
   "key": "e",
   "command": "luna.image.expandCanvasToSelection",
-  "when": "luna:focused && activeEditor == WebviewEditor"
+  "when": "luna:focused && activeCustomEditorId == 'luna.editor'"
 }
 ```
 
