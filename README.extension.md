@@ -45,6 +45,7 @@ The Eraser tool is used to set pixels to fully transparent.
 The Fill tool will flood fill an area with similar colors to the pixel it was triggered on.
 
 - Set the _Flood Mode_ option to _global_ in order to replace pixels across the entire image, regardless of whether they are adjacent.
+- Tolerance can be set to determine how different a pixel needs to be to fill, compared to the pixel that is clicked.
 
 ![](https://raw.githubusercontent.com/lunapaint/vscode-luna-paint/0.3.0/images/readme/fill.gif)
 
