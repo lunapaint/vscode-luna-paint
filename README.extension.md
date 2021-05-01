@@ -69,16 +69,31 @@ The Selection, Move Selection and Move Pixels tools allow selecting a portion of
 
 ![](https://raw.githubusercontent.com/lunapaint/vscode-luna-paint/master/images/readme/selection.gif)
 
+### Crop
+
+The Crop tool (<kbd>c</kbd>) enables cropping an image in a single action, as opposed to creating a selection and then cropping that.
+
+![](https://raw.githubusercontent.com/lunapaint/vscode-luna-paint/master/images/readme/crop.gif)
+
 ### Rectangle
 
 The Rectangle tool can be used to draw a rectangle and then manipulate it within the canvas.
 
-- Supported include blend mode, style (fill, outline or both) and outline size.
+- Supported options include blend mode, style (fill, outline or both) and outline size.
 - Hold shift to drawing a square.
 - Options can be independently configured, even after drawing the rectangle.
 - The rectangle dimensions and top left coordinates are shown in the status bar.
 
 ![](https://raw.githubusercontent.com/lunapaint/vscode-luna-paint/master/images/readme/rectangle.gif)
+
+### Line
+
+The Line tool can be used to draw straight lines.
+
+- The blend mode option is supported.
+- Hold shift to draw the line to the nearest 15°.
+
+![](https://raw.githubusercontent.com/lunapaint/vscode-luna-paint/master/images/readme/line.gif)
 
 ### Zoom
 
