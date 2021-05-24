@@ -207,7 +207,11 @@ To avoid conflicts between Luna Paint's keybindings and user defined keybindings
 
 ### Loading and Saving Files
 
-The loading and saving of `png`, `jpg` and `bmp` images is currently handled by Electron/Chromium, as such there is no means to tweak/optimize how the images get encoded. This also means that while the editor does support layers, saving an image that supports layer is not currently possible. More options for file formats and encoding options is planned for the future.
+The loading and saving of `png`, `jpg` and `bmp` images is currently handled by Electron/Chromium, as such the options for tweaking/optimizing how the images get encoded is limited. This also means that while the editor does support layers, saving an image that supports layer is not currently possible. More options for file formats and encoding options is planned for the future.
+
+### Layers causing rendering issues
+
+On some machines (eg. my macbook), rendering messes up when there are more than 2 layers.
 
 ### VS Code Custom Editors
 
