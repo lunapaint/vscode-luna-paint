@@ -203,6 +203,12 @@ To avoid conflicts between Luna Paint's keybindings and user defined keybindings
 
 
 
+## Roadmap
+
+The roadmap for Luna Paint is tracked on a [GitHub Project](https://github.com/orgs/lunapaint/projects/2), it contains large pieces of work that are planned for the near future. Note that the roadmap is a living document and could change.
+
+
+
 ## Limitations
 
 ### Loading and Saving Files

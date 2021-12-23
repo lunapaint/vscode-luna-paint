@@ -15,3 +15,7 @@ This is the issue tracker for the VS Code extension [**Luna Paint**](https://mar
 ### Release Schedule
 
 The goal for the foreseeable future is to do a new release on the first Monday of every month. This date may be pushed if the quality is not there or if personal circumstances prevent it.
+
+### Roadmap
+
+The roadmap for Luna Paint is tracked on a [GitHub Project](https://github.com/orgs/lunapaint/projects/2), it contains large pieces of work that are planned for the near future. Note that the roadmap is a living document and could change.
