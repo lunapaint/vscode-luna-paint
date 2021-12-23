@@ -1,22 +1,23 @@
 _Luna Paint_ is a VS Code extension that lets you edit raster images from within the editor, just open an image from the explorer and start editing like any other file.
 
-> ⚠ This is an early preview:
+> ⚠ This is a preview release:
 > - Some features you expect from an image editor may be missing or limited.
 > - Hot exit state may break when the extension updates as the data format gets refined.
 > - Images below may show older versions of the UI.
 > - If you hit any problems or want to request a feature, please [create an issue on the repo](https://github.com/lunapaint/vscode-luna-paint).
+
+![](https://raw.githubusercontent.com/lunapaint/vscode-luna-paint/master/images/readme/demo.png)
 
 ## Features
 
 - **Performance**: The editor is built on WebGL to achieve a smooth editing experience.
 - **Layers and blend modes**: Compose an image using multiple layers, combining them with blend modes.
 - **Powerful tools**: A growing range of tools are available to modify images.
+- **Formats supported**: .bmp, .ico, .jpg, .png, .webp.
+- **Import from clipboard**: Quickly edit the image in the clipboard via ctrl/cmd+'.
 - **Hot exit**: Support for [hot exit](https://code.visualstudio.com/docs/editor/codebasics#_hot-exit) is available for small images, just like in text files.
 - **Remote support**: Edit images remotely in a [GitHub Codespace](https://github.com/features/codespaces) or via the [Remote WSL](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl), [SSH](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh) and [Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extensions.
-- **Format support**: .bmp, .ico, .jpg, .png, .webp.
-- **Import from clipboard**: Quickly edit the image in the clipboard via ctrl/cmd+'.
-
-![](https://raw.githubusercontent.com/lunapaint/vscode-luna-paint/master/images/readme/demo.png)
+- **Web support**: The extension works in [vscode.dev](http://vscode.dev/) and [github](http://github.dev/).
 
 ## Tools
 
