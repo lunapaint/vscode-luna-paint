@@ -18,4 +18,4 @@ The goal for the foreseeable future is to do a new release on the first Monday o
 
 ### Roadmap
 
-The roadmap for Luna Paint is tracked on a [GitHub Project](https://github.com/orgs/lunapaint/projects/2), it contains large pieces of work that are planned for the near future. Note that the roadmap is a living document and could change.
+Some of the upcoming changes are tracked on this repository by filder issues by [milestone](https://github.com/lunapaint/vscode-luna-paint/milestones).
