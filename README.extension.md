@@ -50,66 +50,10 @@ This is also a great way to learn the default keybindings.
 
 
 
-## Customization
+## Resources
 
-### Default image size
-
-The image size when creating a new image can be defined in the `luna.defaultImageSize` settings. You may want to set this to the size of your monitor setup for example to quickly paste in screenshots.
-
-### Auto Save
-
-Many people use auto save and it's enabled by default in GitHub Codespaces. Using it with Luna Piant has some consequences when working on larger images though as saves can be expensive (hopefully not forever, see Limitations). You may want to disable auto save if you edit larger images with this extension until a solution is worked out:
-
-```json
-"files.autoSave": "off"
-```
-
-### Free up memory of backgrounded tabs
-
-Disabling `luna.retainContextWhenHidden` will dispose of editor contexts, slowing down tab restoring while freeing up memory. This is enabled by default because files where hot exit are disabled will lose changes when switching tabs. The recommendation for now is to set this to false if you work exclusively in small images.
-
-### Avoiding conflicts in keybindings
-
-To avoid conflicts between Luna Paint's keybindings and user defined keybindings, it's recommended to use the `when` clause `luna:focused && activeCustomEditorId == 'luna.editor'` or the inverse. For example:
-
-```jsonc
-// Only enable this keybinding when Luna Paint is not focused, such that it doesn't conflict with
-// the default crop to selection keybinding.
-{
-  "key": "ctrl+shift+x",
-  "command": "workbench.action.terminal.kill",
-  "when": "!luna:focused && activeCustomEditorId != 'luna.editor'"
-}
-
-// Only enable this keybinding when Luna Paint is focused
-{
-  "key": "e",
-  "command": "luna.image.expandCanvasToSelection",
-  "when": "luna:focused && activeCustomEditorId == 'luna.editor'"
-}
-```
-
-
-
-## Limitations
-
-### Loading and Saving Files
-
-The loading and saving of `png`, `jpg` and `bmp` images is currently handled by Electron/Chromium, as such the options for tweaking/optimizing how the images get encoded is limited. This also means that while the editor does support layers, saving an image that supports layer is not currently possible. More options for file formats and encoding options is planned for the future.
-
-### Layers causing rendering issues
-
-On some machines (eg. my macbook), rendering messes up when there are more than 2 layers.
-
-### VS Code Custom Editors
-
-Luna Paint is built on VS Code's custom editor's API. Below are some of the limitations in the API.
-
-- The tab may lock up when doing busy work (filling, resizing, saving, updating minimap, etc.), the editor was built to support workers in order to keep the UI thread responsive, but it needed to be turned off until [microsoft/vscode#87282](https://github.com/microsoft/vscode/issues/87282) is done.
-- Large images can take a while to load, this is because of the slow transfer speed and lack of ArrayBuffer support of postMessage, see [microsoft/vscode#79257](https://github.com/microsoft/vscode/issues/79257).
-- Hot exit is only enabled by default for relatively small images, this is largely due to the slow transfer speed and lack of workers mentioned above.
-- Hot exit will prevent closing with an error about dirty custom editors if you make a change and switch away from the tab. `"retainContextWhenHidden": true` works around this, the proper fix is [microsoft/vscode#113507](https://github.com/microsoft/vscode/issues/113507).
-- Auto save has problems with custom editors and large files [microsoft/vscode#115404](https://github.com/microsoft/vscode/issues/115404).
+- [Customization](https://github.com/lunapaint/vscode-luna-paint/wiki/Customization)
+- [Limitations](https://github.com/lunapaint/vscode-luna-paint/wiki/Limitations)
 
 
 
