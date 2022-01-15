@@ -223,3 +223,19 @@ Luna Paint is built on VS Code's custom editor's API. Below are some of the limi
 - Hot exit is only enabled by default for relatively small images, this is largely due to the slow transfer speed and lack of workers mentioned above.
 - Hot exit will prevent closing with an error about dirty custom editors if you make a change and switch away from the tab. `"retainContextWhenHidden": true` works around this, the proper fix is [microsoft/vscode#113507](https://github.com/microsoft/vscode/issues/113507).
 - Auto save has problems with custom editors and large files [microsoft/vscode#115404](https://github.com/microsoft/vscode/issues/115404).
+
+
+
+## Open source licenses
+
+The following open source libraries are shipped as part of Luna Paint:
+
+| Project | License | Reason
+|---------|---------|--------
+| [pako]  | [MIT][pako_MIT] and [Zlib][pako_Zlib] | Used to decompress png datastreams
+
+
+
+[pako]: https://www.npmjs.com/package/pako
+[pako_MIT]: https://github.com/nodeca/pako/blob/master/LICENSE
+[pako_Zlib]: https://github.com/nodeca/pako/blob/master/lib/zlib/README
