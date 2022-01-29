@@ -6,7 +6,9 @@ _Luna Paint_ is a VS Code extension that lets you edit raster images from within
 > - Images below may show older versions of the UI.
 > - If you hit any problems or want to request a feature, please [create an issue on the repo](https://github.com/lunapaint/vscode-luna-paint).
 
-![](https://raw.githubusercontent.com/lunapaint/vscode-luna-paint/master/images/readme/demo.png)
+<p align="center">
+    <img src="https://raw.githubusercontent.com/lunapaint/vscode-luna-paint/master/images/readme/demo.png" alt="">
+</p>
 
 
 
@@ -26,9 +28,11 @@ _Luna Paint_ is a VS Code extension that lets you edit raster images from within
 
 ## Getting started
 
-Luna Paint features a walkthrough experience to learn how to use the extension. Access it via VS Code's Get Started page or the `Luna > Help: Open Documentation` command:
+Luna Paint features a walkthrough experience to learn how to use the extension. Access it via VS Code's Get Started page or the `Luna > Help: Open Documentation` command.
 
-![](https://raw.githubusercontent.com/lunapaint/vscode-luna-paint/master/images/readme/walkthrough.png)
+<p align="center">
+    <img src="https://raw.githubusercontent.com/lunapaint/vscode-luna-paint/master/images/readme/walkthrough.png" alt="">
+</p>
 
 
 
@@ -36,7 +40,9 @@ Luna Paint features a walkthrough experience to learn how to use the extension. 
 
 There are a growing range of tools available in Luna paint which can be accessed in the Tools window in the top left of the image editor.
 
-![](https://raw.githubusercontent.com/lunapaint/vscode-luna-paint/master/images/readme/tools-overview.png)
+<p align="center">
+    <img src="https://raw.githubusercontent.com/lunapaint/vscode-luna-paint/master/images/readme/tools-overview.png" alt="">
+</p>
 
 
 
@@ -44,7 +50,9 @@ There are a growing range of tools available in Luna paint which can be accessed
 
 Luna Paint contributes many commands that are accessible via the command palette or the Menu button in the top left corner of the editor. Try searching the command palette for `luna image` or `luna layer`.
 
-![](https://raw.githubusercontent.com/lunapaint/vscode-luna-paint/master/images/readme/image-commands.png)
+<p align="center">
+    <img src="https://raw.githubusercontent.com/lunapaint/vscode-luna-paint/master/images/readme/image-commands.png" alt="">
+</p>
 
 This is also a great way to learn the default keybindings.
 
