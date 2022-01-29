@@ -71,10 +71,4 @@ The following open source libraries are shipped as part of Luna Paint:
 
 | Project | License | Reason
 |---------|---------|--------
-| [pako]  | [MIT][pako_MIT] and [Zlib][pako_Zlib] | Used to decompress png datastreams
-
-
-
-[pako]: https://www.npmjs.com/package/pako
-[pako_MIT]: https://github.com/nodeca/pako/blob/master/LICENSE
-[pako_Zlib]: https://github.com/nodeca/pako/blob/master/lib/zlib/README
+| [pako](https://www.npmjs.com/package/pako) | [MIT](https://github.com/nodeca/pako/blob/master/LICENSE) and [Zlib](https://github.com/nodeca/pako/blob/master/lib/zlib/README) | Used to decompress png datastreams
