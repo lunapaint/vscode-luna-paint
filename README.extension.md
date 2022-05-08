@@ -67,8 +67,9 @@ This is also a great way to learn the default keybindings.
 
 ## Open source licenses
 
-The following open source libraries are shipped as part of Luna Paint:
+The following third party open source libraries are shipped as part of Luna Paint:
 
 | Project | License | Reason
 |---------|---------|--------
 | [pako](https://www.npmjs.com/package/pako) | [MIT](https://github.com/nodeca/pako/blob/master/LICENSE) and [Zlib](https://github.com/nodeca/pako/blob/master/lib/zlib/README) | Used to decompress png datastreams
+| [@lunapaint/png-codec](https://www.npmjs.com/package/png-codec) | [MIT](https://github.com/lunapaint/png-codec/blob/main/LICENSE) | Used to decode/encode png and ico files
