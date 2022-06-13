@@ -18,7 +18,7 @@ _Luna Paint_ is a VS Code extension that lets you edit raster images from within
 - **Performance**: The editor is built on WebGL to achieve a smooth editing experience.
 - **Layers and blend modes**: Compose an image using multiple layers, combining them with blend modes.
 - **Powerful tools**: A growing range of tools are available to modify images.
-- **Formats supported**: .bmp, .ico, .jpg, .png, .webp.
+- **Formats supported**: .bmp, .ico, .jpg, .png, .tga, .webp.
 - **Import from clipboard**: Quickly edit the image in the clipboard via ctrl/cmd+'.
 - **Hot exit**: Support for [hot exit](https://code.visualstudio.com/docs/editor/codebasics#_hot-exit) is available for small images, just like in text files.
 - **Remote support**: Edit images remotely in a [GitHub Codespace](https://github.com/features/codespaces) or via the [Remote WSL](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl), [SSH](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh) and [Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extensions.
@@ -73,3 +73,4 @@ The following third party open source libraries are shipped as part of Luna Pain
 |---------|---------|--------
 | [pako](https://www.npmjs.com/package/pako) | [MIT](https://github.com/nodeca/pako/blob/master/LICENSE) and [Zlib](https://github.com/nodeca/pako/blob/master/lib/zlib/README) | Used to decompress png datastreams
 | [@lunapaint/png-codec](https://www.npmjs.com/package/png-codec) | [MIT](https://github.com/lunapaint/png-codec/blob/main/LICENSE) | Used to decode/encode png and ico files
+| [@lunapaint/tga-codec](https://www.npmjs.com/package/tga-codec) | [MIT](https://github.com/lunapaint/tga-codec/blob/main/LICENSE) | Used to decode tga files
