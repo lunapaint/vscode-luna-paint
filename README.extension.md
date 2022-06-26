@@ -3,7 +3,6 @@ _Luna Paint_ is a VS Code extension that lets you edit raster images from within
 > ⚠ This is a preview release:
 > - Some features you expect from an image editor may be missing or limited.
 > - Hot exit state may break when the extension updates as the data format gets refined.
-> - Images below may show older versions of the UI.
 > - If you hit any problems or want to request a feature, please [create an issue on the repo](https://github.com/lunapaint/vscode-luna-paint).
 
 <p align="center">
@@ -23,6 +22,7 @@ _Luna Paint_ is a VS Code extension that lets you edit raster images from within
 - **Hot exit**: Support for [hot exit](https://code.visualstudio.com/docs/editor/codebasics#_hot-exit) is available for small images, just like in text files.
 - **Remote support**: Edit images remotely in a [GitHub Codespace](https://github.com/features/codespaces) or via the [Remote WSL](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl), [SSH](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh) and [Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extensions.
 - **Web support**: The extension works in [vscode.dev](http://vscode.dev/) and [github](http://github.dev/).
+- **Developer oriented**: Includes features for inspecting image files and gives warnings for potentially broken files.
 
 
 
