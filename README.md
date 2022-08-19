@@ -18,4 +18,4 @@ The goal for the foreseeable future is to do a new release on the first Monday o
 
 ### Roadmap
 
-Some of the upcoming changes are tracked on this repository by filder issues by [milestone](https://github.com/lunapaint/vscode-luna-paint/milestones).
+Some of the upcoming changes are tracked in this repository and can be seen by filtering issues by [milestone](https://github.com/lunapaint/vscode-luna-paint/milestones).
