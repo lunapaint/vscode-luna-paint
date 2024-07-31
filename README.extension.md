@@ -72,5 +72,5 @@ The following third party open source libraries are shipped as part of Luna Pain
 | Project | License | Reason
 |---------|---------|--------
 | [pako](https://www.npmjs.com/package/pako) | [MIT](https://github.com/nodeca/pako/blob/master/LICENSE) and [Zlib](https://github.com/nodeca/pako/blob/master/lib/zlib/README) | Used to decompress png datastreams
-| [@lunapaint/png-codec](https://www.npmjs.com/package/png-codec) | [MIT](https://github.com/lunapaint/png-codec/blob/main/LICENSE) | Used to decode/encode png and ico files
-| [@lunapaint/tga-codec](https://www.npmjs.com/package/tga-codec) | [MIT](https://github.com/lunapaint/tga-codec/blob/main/LICENSE) | Used to decode tga files
+| [@lunapaint/png-codec](https://www.npmjs.com/package/@lunapaint/png-codec) | [MIT](https://github.com/lunapaint/png-codec/blob/main/LICENSE) | Used to decode/encode png and ico files
+| [@lunapaint/tga-codec](https://www.npmjs.com/package/@lunapaint/tga-codec) | [MIT](https://github.com/lunapaint/tga-codec/blob/main/LICENSE) | Used to decode tga files
